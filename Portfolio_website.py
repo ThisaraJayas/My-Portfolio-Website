@@ -213,6 +213,38 @@ if selected == 'Projects':
                     """)
             st.markdown("[GitHub Link](https://github.com/ThisaraJayas/OnlineTransportSystem-Taxi-Booking)")
 
+        image2 = Image.open("images/project1.jpg")
+        col9, col10 = st.columns(2)
+        with col9:
+            st.image(image2, use_column_width=True)
+        with col10:
+            st.subheader("Pharmacy Management System (PHP HTML/CSS)")
+            st.write("""
+                        Developed for the IWT module using PHP, HTML, and CSS and Integrates MySQL as the database
+                        Facilitates the purchasing of medicine through the store and also allows customers to order
+                        medicine by uploading prescriptions
+                            """)
+            st.markdown("[GitHub Link](https://github.com/ThisaraJayas/Pharmacy-Management-System)")
+
+        image2 = Image.open("images/project1.jpg")
+        col9, col10 = st.columns(2)
+        with col9:
+            st.image(image2, use_column_width=True)
+        with col10:
+            st.subheader("My Portfolio Website (Python & Streamlit)")
+            st.write("""
+                               Developed using Python and Streamlit, this portfolio website showcases my projects, skills, and contact me direcly.
+                Key features include:
+                - A responsive design that ensures a seamless experience on both desktop and mobile devices.
+                - An AI chatbot that answers questions about my background, skills, and projects, providing an interactive user experience.
+                - Integration with various social media platforms for easy access to my professional profiles.
+                - A project gallery with detailed descriptions and links to GitHub repositories.
+                - Contact form that allows visitors to reach out to me directly.
+                                    """)
+            st.markdown("[GitHub Link](https://github.com/ThisaraJayas/Pharmacy-Management-System)")
+
+
+
 
 
 
