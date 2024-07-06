@@ -177,10 +177,10 @@ if selected == 'Projects':
         with col6:
             st.subheader("Electrical and Service Management System (MERN Stack) ReactJs, ExpressJs, MongoDB, NodeJs")
             st.write("""
-                Developed for the ITP Module using the MERN stack with agile methodology. Utilizes MongoDB as
+                - Developed for the ITP Module using the MERN stack with agile methodology. Utilizes MongoDB as
                 the database, implements JWT and OAuth for user authentication with Firebase for file handling, and
                 is deployed to Vercel.
-                Allows customers to schedule service appointments efficiently.
+                - Allows customers to schedule service appointments efficiently.
             """)
             st.markdown("[Github Link](https://github.com/ThisaraJayas/ITP_Project__NewtonElectrical)")
             st.markdown("[Website Link](https://itp-project-newton-electrical.vercel.app/)")
@@ -192,9 +192,9 @@ if selected == 'Projects':
         with col8:
             st.subheader("Financial Management System (Java Spring Boot)")
             st.write("""
-                    Independently developed using Java Spring Boot for backend API development and ReactJS for the
+                    - Independently developed using Java Spring Boot for backend API development and ReactJS for the
                     frontend development.
-                    Integrated PostgreSQL as the database and implemented Spring Security for user authentication.
+                    - Integrated PostgreSQL as the database and implemented Spring Security for user authentication.
             """)
             st.markdown("[GitHub (Backend) Link](https://github.com/ThisaraJayas/Financial-Management-System-Backend)")
             st.markdown("[GitHub (Frontend) Link](https://github.com/ThisaraJayas/Financial-Management-System-Frontend)")
@@ -208,8 +208,8 @@ if selected == 'Projects':
         with col10:
             st.subheader("Transport Management System (Java Servlet & JSP)")
             st.write("""
-                            Developed using Java, JSP, and Servlets and Integrates MySQL as the database
-                            Allows users to book vehicles and schedule vehicle appointments
+                            - Developed using Java, JSP, and Servlets and Integrates MySQL as the database
+                            - Allows users to book vehicles and schedule vehicle appointments
                     """)
             st.markdown("[GitHub Link](https://github.com/ThisaraJayas/OnlineTransportSystem-Taxi-Booking)")
 
@@ -235,7 +235,6 @@ if selected == 'Projects':
             st.write("""
                                Developed using Python and Streamlit, this portfolio website showcases my projects, skills, and contact me direcly.
                 Key features include:
-                - A responsive design that ensures a seamless experience on both desktop and mobile devices.
                 - An AI chatbot that answers questions about my background, skills, and projects, providing an interactive user experience.
                 - Integration with various social media platforms for easy access to my professional profiles.
                 - A project gallery with detailed descriptions and links to GitHub repositories.
