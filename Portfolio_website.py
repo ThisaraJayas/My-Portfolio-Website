@@ -44,7 +44,9 @@ with colm1:
     st.subheader("Hey Guys :wave:")
     st.title("I am Thisara Jayasinghe")
     st.write("""
-    Im thisara Jayasinghe Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+    Im Thisara Jayasinghe 21 years old, a  highly motivated and dedicated Software Engineering undergraduate with strong programming
+fundamentals and proficiency in Java, MERN stack, C++, Spring framework, AI/ML and more. A quick learner
+with excellent teamwork, leadership, time management and communication abilities.
     """)
     st.markdown("[Read More About Me](https://www.linkedin.com/in/thisara-jayasinghe/)")
     st.markdown("""
