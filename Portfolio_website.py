@@ -245,6 +245,17 @@ if selected == 'Projects':
 
 
 
+        st.title(" ")
+
+        st.markdown(
+            """
+            <div style='text-align: center; color: #B2BEB5;'>
+                <h2>More Projects on GitHub.</h2>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
 
 
