@@ -240,7 +240,7 @@ if selected == 'Projects':
                 - A project gallery with detailed descriptions and links to GitHub repositories.
                 - Contact form that allows visitors to reach out to me directly.
                                     """)
-            st.markdown("[GitHub Link](https://github.com/ThisaraJayas/Pharmacy-Management-System)")
+            st.markdown("[GitHub Link](https://github.com/ThisaraJayas/My-Portfolio-Website)")
 
 
 
