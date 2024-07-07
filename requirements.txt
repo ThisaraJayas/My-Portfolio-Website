@@ -1,2 +1,7 @@
 streamlit
 google-generativeai
+streamlit-option-menu
+requests
+streamlit-lottie
+Pillow
+smtplib
