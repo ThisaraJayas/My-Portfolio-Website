@@ -103,7 +103,8 @@ with excellent teamwork, leadership, time management and communication abilities
             """, unsafe_allow_html=True)
 
 with colm2:
-    st_lottie(lottie_animation)
+    st.image("images/me.png")
+    ##st_lottie(lottie_animation)
 
 st.markdown('---')
 
