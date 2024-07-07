@@ -13,29 +13,6 @@ genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: black;
-        color: white;
-    }
-    .stButton>button {
-        background-color: white;
-        color: black;
-    }
-    .stTextInput>div>div>input {
-        background-color: white;
-        color: black;
-    }
-    .stTextArea>div>textarea {
-        background-color: white;
-        color: black;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 def send_email(name, subject, message):
     sender_email = "sasmithajayasinghe1@gmail.com"  # Replace with your email
     password = "fnyg xhpn xpum nrha"
@@ -125,7 +102,7 @@ with excellent teamwork, leadership, time management and communication abilities
             """, unsafe_allow_html=True)
 
 with colm2:
-    image_path = 'images/me.png'
+    image_path = 'images/me1.png'
     original_image = Image.open(image_path)
     width, height = original_image.size
     resized_image = original_image.resize((width // 2, height // 2))
