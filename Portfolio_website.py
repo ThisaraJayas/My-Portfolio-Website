@@ -5,6 +5,12 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 import smtplib
 from email.message import EmailMessage
+import google.generativeai as genai
+
+genai.configure(api_key="AIzaSyAs9nOfHfbJLTEKJgwoYAZw4n0JT4wqcPQ")
+
+model = genai.GenerativeModel('gemini-1.5-flash')
+
 
 def send_email(name, subject, message):
     sender_email = "sasmithajayasinghe1@gmail.com"  # Replace with your email
@@ -44,7 +50,7 @@ with colm1:
     st.subheader("Hey Guys :wave:")
     st.title("I am Thisara Jayasinghe")
     st.write("""
-    Im Thisara Jayasinghe 21 years old, a  highly motivated and dedicated Software Engineering undergraduate with strong programming
+    I'm Thisara Jayasinghe 21 years old, a  highly motivated and dedicated Software Engineering undergraduate with strong programming
 fundamentals and proficiency in Java, MERN stack, C++, Spring framework, AI/ML and more. A quick learner
 with excellent teamwork, leadership, time management and communication abilities.
     """)
@@ -109,9 +115,10 @@ with st.container():
 if selected == 'About':
     with st.container():
         st.title("Thisara's AI Bot")
-        st.write("Ask anything about me")
-        st.text_input("")
-        st.button("ASK", use_container_width=400)
+        User_question = st.text_input("Ask anything about me")
+        if st.button("ASK", use_container_width=400):
+            prompt = User_question
+            response = model.generate_content(prompt)
         st.title("")
         colum1, colum2 = st.columns(2)
 
