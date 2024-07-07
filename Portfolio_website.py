@@ -103,7 +103,11 @@ with excellent teamwork, leadership, time management and communication abilities
             """, unsafe_allow_html=True)
 
 with colm2:
-    st.image("images/me.png")
+    image_path = 'images/me.png'
+    original_image = Image.open(image_path)
+    width, height = original_image.size
+    resized_image = original_image.resize((width // 2, height // 2))
+    st.image(resized_image)
     ##st_lottie(lottie_animation)
 
 st.markdown('---')
