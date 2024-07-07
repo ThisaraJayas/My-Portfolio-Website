@@ -7,8 +7,8 @@ import smtplib
 from email.message import EmailMessage
 import google.generativeai as genai
 
-# //AIzaSyAs9nOfHfbJLTEKJgwoYAZw4n0JT4wqcPQ
-api_key = st.secrets["dggd"]
+
+api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
