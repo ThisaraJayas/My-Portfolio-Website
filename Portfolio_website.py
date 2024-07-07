@@ -7,7 +7,9 @@ import smtplib
 from email.message import EmailMessage
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyAs9nOfHfbJLTEKJgwoYAZw4n0JT4wqcPQ")
+# //AIzaSyAs9nOfHfbJLTEKJgwoYAZw4n0JT4wqcPQ
+api_key = st.secrets["dggd"]
+genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
@@ -112,13 +114,24 @@ with st.container():
         icons=['person', 'code-slash', 'chat-left-text-fill'],
         orientation='horizontal'
     )
+
+
+persona = """ You are Thisara AI bot. You help people answer questions about your self (i.e Thisara)
+Answer as if you are responding . dont answer in second or third person. 
+ If you don't know they answer you simply say "That's a secret"
+ Here is more info about Murtaza: 
+ I'm Thisara Jayasinghe 21 years old, a highly motivated and dedicated Software Engineering undergraduate 
+ with strong programming fundamentals and proficiency in Java, MERN stack, C++, Spring framework, AI/ML and more.
+A quick learner with excellent teamwork, leadership, time management and communication abilities.
+ """
 if selected == 'About':
     with st.container():
         st.title("Thisara's AI Bot")
         User_question = st.text_input("Ask anything about me")
         if st.button("ASK", use_container_width=400):
-            prompt = User_question
+            prompt = persona +"Here is the question that the user asked"+ User_question
             response = model.generate_content(prompt)
+            st.write(response.text)
         st.title("")
         colum1, colum2 = st.columns(2)
 
