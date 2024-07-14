@@ -166,7 +166,6 @@ if selected == 'About':
                 **Sri Lanka Institute of Information Technology**
                 - Bachelor of Science in Information Technology (Special), Software Engineering
                 - Object Oriented Programming, Data Structures and Algorithms
-                - Current GPA: 3.5
                 """)
             with col4:
                 st.subheader("Skills")
